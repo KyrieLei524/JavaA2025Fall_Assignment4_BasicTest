@@ -66,8 +66,8 @@ public class BasicShoppingCartTest {
         String expectedReceipt =
                 """
                 === Checkout Receipt ===
-                Test Book x2 - $50/ea → $100
-                Test Food x5 - $5/ea → $25
+                Test Book x2 - $50/ea = $100
+                Test Food x5 - $5/ea = $25
                 Total: $125
                 Points used: $0 (0 points)
                 Final Total: $125
@@ -105,8 +105,8 @@ public class BasicShoppingCartTest {
         String expectedReceipt =
                 """
                 === Checkout Receipt ===
-                Test Book x3 - $50/ea → $150
-                Test Food x5 - $5/ea → $25
+                Test Book x3 - $50/ea = $150
+                Test Food x5 - $5/ea = $25
                 Total: $175
                 Points used: $10 (10 points)
                 Final Total: $165
@@ -142,7 +142,7 @@ public class BasicShoppingCartTest {
         String expectedReceipt =
                 """
                 === Checkout Receipt ===
-                Test Book x4 - $50/ea → $200
+                Test Book x4 - $50/ea = $200
                 Total: $200
                 Points used: $40 (40 points)
                 Final Total: $160
@@ -153,3 +153,4 @@ public class BasicShoppingCartTest {
         assertEquals(normalize(expectedReceipt), normalize(outContent.toString()), "Receipt format and point logic for GoldMember is incorrect.");
     }
 }
+
